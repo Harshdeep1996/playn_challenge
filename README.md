@@ -13,3 +13,12 @@
 
 - The log probabilities are missing from the chat endpoint of OpenAI: `https://community.openai.com/t/logprobs-are-missing-from-the-chat-endpoints/289514/13`
 - Since the log probabilities cannot be used, I use the `langchain-visualizer` to see how the chain works and to see what is the raw input being fed to the OpenAI model. To run the visualizer, `python visualizer.py` which will open a browser window in which you can see the agent work in real time.
+
+## Files
+
+- requirements.txt: The requirements which need to be installed to run the project.
+- Dockerfile: The dockerfile to run the project
+- chain.py: The module which defines the agent for table reservation and also declares the human and datetime tool.
+- models.py: The Pydantic models which are used as input and output to the agent.
+- parser.py: convert the model output into Pydantic model with the help of the structured output function of Langchain.
+- visualizer.py: visualize what steps and what input is fed to the model for generating the conversation.
