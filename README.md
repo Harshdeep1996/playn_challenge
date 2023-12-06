@@ -6,6 +6,7 @@
 - setup the OpenAI key by using the following command (if running locally): `export OPENAI_API_KEY="API-KEY-HERE"`
 - Build the image for Docker using: `docker build -t playn-challenge .`
 - Run the docker image: `docker run -it -p 8372:8372 -e OPENAI_API_KEY=API-KEY-HERE playn-challenge`
+- To run it locally just run the following command: `python main.py` with the key already setup.
 
 
 ## Caveats
